@@ -6,12 +6,13 @@ body {
 .bar {
   fill: #80cbc4;
   border-radius: 15px;
-   padding: 20px
+   padding: 20px;
+   color: black;
   
 }
 
 .bar1 {
-    fill: red;
+    fill: rgb(255, 0, 0);
     opacity: .5;
 }
 
