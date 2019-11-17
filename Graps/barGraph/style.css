@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.bar {
+  fill: #80cbc4;
+  border-radius: 15px;
+   padding: 20px
+  
+}
+
+.bar1 {
+    fill: red;
+    opacity: .5;
+}
+
+.backgrnd {
+    /* background-color: #2F4A6D; */
+}
+
+.text {
+    font-size: 3em;
+}
+
+.tick text {
+    fill: #6d635b;
+    font-size: 1.5em;
+}
+
+.tick line {
+    stroke: #C0C0BB;
+}
