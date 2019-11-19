@@ -18,7 +18,7 @@ const render = data => {
 
 
 
-    const margin = { top: 60, right: 300, bottom: 88, left: 100 };
+    const margin = { top: 60, right: 00, bottom: 88, left: 100 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
