@@ -16,6 +16,12 @@ circle {
   mix-blend-mode: multiply;
 }
 
+.areas {
+  /* fill: maroon; */
+}
+
+
+
 text {
   font-family: sans-serif;
 }
