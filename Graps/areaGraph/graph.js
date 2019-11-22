@@ -38,7 +38,7 @@ d3.csv("horizon.csv", function(data) {
   //     .nice();
   var x = d3
     .scaleLinear()
-    .domain([0, 120])
+    .domain(d3.extent(data, d=> d.speed))
     // .domain([0, 50])
     .range([0, width]);
   // console.log(x.range())
