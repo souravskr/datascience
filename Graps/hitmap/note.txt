@@ -1,0 +1,42 @@
+   // const times = ["8a", "1p", "3p", "4p", "2p", "5p", "1a", "10a", "11a", "12p", "12a", "2a", "9a", "8p", "10p", "7p", "9p", "6p", "5a", "6a", "7a", "11p"]
+
+    console.log(timeGroup)
+    // timeGroup[0] = '8a'
+    // timeGroup[1] = '1p'
+    // timeGroup[2] = '3p'
+    // timeGroup[3] = '4p'
+    // timeGroup[4] = '2p'
+    // timeGroup[5] = '5p'
+    // timeGroup[6] = '1a'
+    // timeGroup[7] = '10a'
+    // timeGroup[8] = '11a'
+    // timeGroup[9] = '12p'
+    // timeGroup[10] = '12a'
+    // timeGroup[11] = '2a'
+    // timeGroup[12] = '9a'
+    // timeGroup[13] = '8p'
+    // timeGroup[14] = '10p'
+    // timeGroup[15] = '7p'
+    // timeGroup[16] = '9p'
+    // timeGroup[17] = '6p'
+    // timeGroup[18] = '5a'
+    // timeGroup[19] = '6a'
+    // timeGroup[20] = '7a'
+    // timeGroup[21] = '11p'
+    
+// console.log(timeGroup);
+//   console.log(weekDayGroup);
+
+
+
+    // if (selectedGroup == 'Device_1'){
+    //     var timeGroup = d3.map([nestedData[0]][0].values, d => d.time).keys();
+    // } else if (selectedGroup == 'Device_2') {
+    //     var timeGroup = d3.map([nestedData[1]][0].values, d => d.time).keys();
+    // } else if (selectedGroup == 'Device_3') {
+    //     var timeGroup = d3.map([nestedData[2]][0].values, d => d.time).keys();
+    // } else if (selectedGroup == 'Device_4') {
+    //     var timeGroup = d3.map([nestedData[3]][0].values, d => d.time).keys();
+    // }else{
+    //     var timeGroup = d3.map([nestedData[4]][0].values, d => d.time).keys();
+    // }

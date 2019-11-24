@@ -1,6 +1,6 @@
 var width = 960,
     height = 960,
-    radius = (Math.min(width, height) / 2) - 10;
+    radius = (Math.min(width, height) / 3) - 10;
 
 var formatNumber = d3.format(",d");
 

@@ -1,1 +1,116 @@
-{"children":[{"name":"Device_1","class":"uuid","children":[{"name":"Saturday","class":"weekday","children":[{"name":"2017-07-15","class":"date","children":[{"name":"10.59","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Sunday","class":"weekday","children":[{"name":"2017-07-16","class":"date","children":[{"name":"9.98","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Monday","class":"weekday","children":[{"name":"2017-07-17","class":"date","children":[{"name":"1.58","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Tuesday","class":"weekday","children":[{"name":"2017-07-18","class":"date","children":[{"name":"4.82","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Wednesday","class":"weekday","children":[{"name":"2017-07-19","class":"date","children":[{"name":"4.77","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Thursday","class":"weekday","children":[{"name":"2017-07-20","class":"date","children":[{"name":"1.59","class":"mean","size":1,"color":"Device_1","label":null}]}]},{"name":"Friday","class":"weekday","children":[{"name":"2017-07-21","class":"date","children":[{"name":"1.42","class":"mean","size":1,"color":"Device_1","label":null}]}]}]},{"name":"Device_2","class":"uuid","children":[{"name":"Saturday","class":"weekday","children":[{"name":"2017-07-15","class":"date","children":[{"name":"12.65","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Sunday","class":"weekday","children":[{"name":"2017-07-16","class":"date","children":[{"name":"13.12","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Monday","class":"weekday","children":[{"name":"2017-07-17","class":"date","children":[{"name":"5.93","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Tuesday","class":"weekday","children":[{"name":"2017-07-18","class":"date","children":[{"name":"10.23","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Wednesday","class":"weekday","children":[{"name":"2017-07-19","class":"date","children":[{"name":"6.5","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Thursday","class":"weekday","children":[{"name":"2017-07-20","class":"date","children":[{"name":"5.05","class":"mean","size":1,"color":"Device_2","label":null}]}]},{"name":"Friday","class":"weekday","children":[{"name":"2017-07-21","class":"date","children":[{"name":"12.06","class":"mean","size":1,"color":"Device_2","label":null}]}]}]},{"name":"Device_3","class":"uuid","children":[{"name":"Saturday","class":"weekday","children":[{"name":"2017-07-15","class":"date","children":[{"name":"1.44","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Sunday","class":"weekday","children":[{"name":"2017-07-16","class":"date","children":[{"name":"11.62","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Monday","class":"weekday","children":[{"name":"2017-07-17","class":"date","children":[{"name":"6.41","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Tuesday","class":"weekday","children":[{"name":"2017-07-18","class":"date","children":[{"name":"4.02","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Wednesday","class":"weekday","children":[{"name":"2017-07-19","class":"date","children":[{"name":"4.71","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Thursday","class":"weekday","children":[{"name":"2017-07-20","class":"date","children":[{"name":"6.58","class":"mean","size":1,"color":"Device_3","label":null}]}]},{"name":"Friday","class":"weekday","children":[{"name":"2017-07-21","class":"date","children":[{"name":"2.66","class":"mean","size":1,"color":"Device_3","label":null}]}]}]},{"name":"Device_4","class":"uuid","children":[{"name":"Saturday","class":"weekday","children":[{"name":"2017-07-15","class":"date","children":[{"name":"8.35","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Sunday","class":"weekday","children":[{"name":"2017-07-16","class":"date","children":[{"name":"10.7","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Monday","class":"weekday","children":[{"name":"2017-07-17","class":"date","children":[{"name":"3.29","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Tuesday","class":"weekday","children":[{"name":"2017-07-18","class":"date","children":[{"name":"4.73","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Wednesday","class":"weekday","children":[{"name":"2017-07-19","class":"date","children":[{"name":"4.43","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Thursday","class":"weekday","children":[{"name":"2017-07-20","class":"date","children":[{"name":"2.87","class":"mean","size":1,"color":"Device_4","label":null}]}]},{"name":"Friday","class":"weekday","children":[{"name":"2017-07-21","class":"date","children":[{"name":"5.26","class":"mean","size":1,"color":"Device_4","label":null}]}]}]},{"name":"Device_5","class":"uuid","children":[{"name":"Saturday","class":"weekday","children":[{"name":"2017-07-15","class":"date","children":[{"name":"3.13","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Sunday","class":"weekday","children":[{"name":"2017-07-16","class":"date","children":[{"name":"5.6","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Monday","class":"weekday","children":[{"name":"2017-07-17","class":"date","children":[{"name":"3.52","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Tuesday","class":"weekday","children":[{"name":"2017-07-18","class":"date","children":[{"name":"1.89","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Wednesday","class":"weekday","children":[{"name":"2017-07-19","class":"date","children":[{"name":"3.36","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Thursday","class":"weekday","children":[{"name":"2017-07-20","class":"date","children":[{"name":"6.22","class":"mean","size":1,"color":"Device_5","label":null}]}]},{"name":"Friday","class":"weekday","children":[{"name":"2017-07-21","class":"date","children":[{"name":"5.99","class":"mean","size":1,"color":"Device_5","label":null}]}]}]}]}
+{
+    "children":[
+        {
+            "name":"SB1",
+            "class":"imei",
+            "children":[
+                {
+                    "name":"2014",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.79", "size": 10.79, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.63", "size": 9.63, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 49.2", "size": 49.2, "class":"avg_boi"}
+                    ]
+                },
+
+                {
+                    "name":"2017",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.79", "size": 10.79, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.63", "size": 9.63, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 49.2", "size": 49.2, "class":"avg_boi"}
+                    ]
+                },
+
+                {
+                    "name":"2018",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.79", "size": 10.79, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.63", "size": 9.63, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 49.2", "size": 49.2, "class":"avg_boi"}
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name":"SB2",
+            "class":"imei",
+            "children":[
+                {
+                    "name":"2014",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.48", "size": 10.48, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.36", "size": 9.36, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 47.8", "size": 47.80, "class":"avg_boi"}
+                    ]
+                },
+
+                {
+                    "name":"2017",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.90", "size": 10.90, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.73", "size": 9.73, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 49.69", "size": 49.69, "class":"avg_boi"}
+                    ]
+                },
+
+                {
+                    "name":"2018",
+                    "class":"year",
+                    "children":[
+                        {"name":"tos: 10.57", "size": 10.57, "class":"avg_tos", "label":null},
+                        {"name":"toi: 9.43", "size": 9.43, "class":"avg_toi", "color":"SB1"},
+                        {"name":"boi: 48.18", "size": 48.18, "class":"avg_boi"}
+                    ]
+                }
+
+            ]
+        },
+
+
+
+        {
+        "name":"SB3",
+        "class":"imei",
+        "children":[
+            {
+                "name":"2014",
+                "class":"year",
+                "children":[
+                    {"name":"tos: 10.47", "size": 10.47, "class":"avg_tos", "label":null},
+                    {"name":"toi: 9.36", "size": 9.36, "class":"avg_toi", "color":"SB1"},
+                    {"name":"boi: 47.8", "size": 47.8, "class":"avg_boi"}
+                ]
+            },
+
+            {
+                "name":"2017",
+                "class":"year",
+                "children":[
+                    {"name":"tos: 10.93", "size": 10.93, "class":"avg_tos", "label":null},
+                    {"name":"toi: 9.76", "size": 9.76, "class":"avg_toi", "color":"SB1"},
+                    {"name":"boi: 49.85", "size": 49.85, "class":"avg_boi"}
+                ]
+            },
+
+            {
+                "name":"2018",
+                "class":"year",
+                "children":[
+                    {"name":"tos: 10.71", "size": 10.71, "class":"avg_tos", "label":null},
+                    {"name":"toi: 9.56", "size": 9.56, "class":"avg_toi", "color":"SB1"},
+                    {"name":"boi: 48.84", "size": 48.84, "class":"avg_boi"}
+                ]
+            }
+
+        ]
+    }
+
+    ]
+}
