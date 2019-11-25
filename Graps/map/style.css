@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.text:hover {
+    overflow: visible;
+}
+
+#selectButton{
+    margin-top: 10px;
+     margin-left: 10px;
+     background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+#weekDay {
+       margin-top: 10px;
+     margin-left: 10px;
+     background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+
+
+#map {
+    margin-top: 10px;
+     margin-left: 10px;
+     padding-bottom: 50px;
+     /* padding-top: 50px;
+  padding-right: 30px;
+  
+  padding-left: 180px; */
+}

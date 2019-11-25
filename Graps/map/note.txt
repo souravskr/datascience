@@ -1,0 +1,22 @@
+    var weekGroup = d3.map(dataFilter[0].values, d => d.weekday).keys();
+    console.log([dataFilter[0].values][0])
+
+    var dayWise = [dataFilter[0].values][0].filter((d) => {
+        console.log(d.weekday)
+        d.weekday === weekdays
+    })
+        // [d[0].values][0][i].weekday === weekdays})
+
+console.log(dayWise)
+
+    // console.log(weekGroup)
+    // day = []
+
+    // weekGroup.forEach (d => {
+    //     if (weekday == d) {
+    //         day.push(d);
+           
+    //     }
+    // })
+
+    // console.log(day[0])

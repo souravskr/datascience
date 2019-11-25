@@ -1,5 +1,5 @@
 const format = d3.format(",d");
-const width = 960;
+const width = 1060;
 const radius = width / 16;
 
 const arc = d3
@@ -57,12 +57,12 @@ d3.json("sunburst.json").then(data => {
   const svg = d3
     .select("#partitionSVG")
     .style("width", "100%")
-    .style("height", "900px")
+    .style("height", "100%")
     .style("font", "10px sans-serif");
 
   const g = svg
     .append("g")
-    .attr("transform", `translate(${width / 2},${width / 2})`);
+    .attr("transform", `translate(${width / 3},${width / 3})`);
 
   const path = g
     .append("g")
