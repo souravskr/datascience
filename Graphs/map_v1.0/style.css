@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.text:hover {
+    overflow: visible;
+}
+
+#map { 
+    
+    height: 1300px; 
+    width: 2000px;
+    margin-top: 10px;
+    border : 2px solid #182e69
+}
+
+#selectButton{
+    margin-top: 10px;
+     /* margin-left: 10px; */
+     background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+#selectWeek {
+     margin-top: 10px;
+     /* margin-left: 10px; */
+     background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+#map, #legend {
+  
+    margin-right:30px;
+    float:left;
+   
+}
+
+/* #legend{
+    border:2px solid #182e69
+
+} */

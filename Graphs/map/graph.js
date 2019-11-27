@@ -70,6 +70,22 @@ d3.csv("balancedData.csv", function (collection) {
     // console.log([nestedDevice[0]][0].values[0].weekday)
     console.log(nestedDevice.values)
 
+    var colours = d3
+        .scale.linear()
+        .domain(d3.range(1, 10, 1))
+        .range([
+            "#87cefa",
+            "#86c6ef",
+            "#85bde4",
+            "#83b7d9",
+            "#82afce",
+            "#80a6c2",
+            "#7e9fb8",
+            "#7995aa",
+            "#758b9e",
+            "#708090"
+        ]);
+
 
  
     d3.select("#selectButton").on("change", function onchange() {
@@ -80,14 +96,18 @@ d3.csv("balancedData.csv", function (collection) {
         // updateData(selectedName, selectedDay);
         console.log(typeof(selectedName))
 
+
+
         var feature = g.selectAll(".circle")
             .data(nestedDevice[selectedName].values)
             .enter().append("circle")
             .attr('class', 'circle')
             .style("stroke", "black")
-            .style("opacity", .3)
-            .style("fill", color[selectedName])
-            .attr("r", 20)
+            .style("opacity", .5)
+            .style("fill", function (d){
+                return colours (d.speed)
+            })
+            .attr("r", 10)
 
         feature.append('title')
             .attr('class', 'text')
@@ -110,7 +130,7 @@ d3.csv("balancedData.csv", function (collection) {
         }
 
 
-
+        feature.selectAll(".circle").remove()
 
     });
 

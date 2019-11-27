@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');   
+   
+   body {
+      margin-top: 30px;
+      font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;      font-weight: 400;
+      fill: #696969;
+      text-align: center;
+    }
+    
+    .timeLabel, .dayLabel {
+		    font-size: 10.6em;
+		    fill: #AAAAAA;
+		    font-weight: 300;
+		}
+
+    #nav-container {
+      display: flex;
+      /* justify-content: center; */
+      cursor: pointer;
+    }
+
+    #nav-container .left {
+      margin-right: 20px;
+         background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          border-radius: 25px;
+            /* font-weight: bold; */
+    }
+
+    #nav-container .right {
+      margin-left: 20px;
+      background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          border-radius: 25px;
+    }
+
+    #locationDropdown select{
+
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    font-weight: bold;
+border-radius: 25px;
+
+
+    }
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 26px;
+  background: #ef3b2c;
+  color: rgb(15, 13, 13);
+  border-radius: 20px;
+  font-size: 26px;
+  opacity: .5;
+}
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

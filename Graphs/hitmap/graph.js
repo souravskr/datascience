@@ -8,29 +8,22 @@ var svg = d3
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
-  .attr("transform", `translate(${margin.left + 100},${margin.top - 50})`);
+  .attr("transform", `translate(${margin.left + 300},${margin.top - 50})`);
 
 const render = data => {
   console.log(data);
 
+  const nestedData = d3
+    .nest()
+    .key(d => d.uuid)
+    .entries(data);
 
-    const nestedData = d3
-        .nest()
-        .key(d => d.uuid)
-        .entries(data);
-
-   var groupName = nestedData.map(d => d.key);
-
-
+  var groupName = nestedData.map(d => d.key);
 
   var timeGroup = d3.map(data, d => d.time).keys();
   var weekDayGroup = d3.map(data, d => d.weekday).keys();
 
-
-
   //  console.log(times)
-
-
 
   var x = d3
     .scaleBand()
@@ -38,23 +31,20 @@ const render = data => {
     .domain(timeGroup)
     .padding(0.5);
 
-var xAxis = d3.axisTop(x)
+  var xAxis = d3
+    .axisTop(x)
     .tickSize(0)
-    .tickPadding(1)
+    .tickPadding(1);
 
-
-var xAxisG = svg
+  var xAxisG = svg
     .append("g")
     .style("font-size", 20)
     .style("opacity", 0.5)
     // .attr("transform", `translate(0, ${20})`)
     // .call(d3.axisTop(x).tickSize(0))
-    .call(xAxis)
+    .call(xAxis);
 
-
-    xAxisG
-    .selectAll(".domain")
-    .remove();
+  xAxisG.selectAll(".domain").remove();
 
   var y = d3
     .scaleBand()
@@ -70,7 +60,9 @@ var xAxisG = svg
     .select(".domain")
     .remove();
 
-  const colorScale = d3.scaleSequential(d3.interpolateGreens).domain([0, timeGroup.length]);
+  const colorScale = d3
+    .scaleSequential(d3.interpolateGreens)
+    .domain([0, timeGroup.length]);
 
   const tip = d3
     .tip()
@@ -82,13 +74,9 @@ var xAxisG = svg
     });
   svg.call(tip);
 
-
-
-
-
   svg
-    .selectAll('.hit')
-      .data(data, function(d) {
+    .selectAll(".hit")
+    .data(data, function(d) {
       return d.time + ":" + d.weekday;
     })
     .enter()
@@ -100,8 +88,8 @@ var xAxisG = svg
     .attr("y", function(d) {
       return y(d.weekday);
     })
-      .attr("width", 50)
-      .attr("height", y.bandwidth())
+    .attr("width", 50)
+    .attr("height", y.bandwidth())
     .attr("rx", 6)
     .attr("ry", 6)
     .style("fill", function(d) {
@@ -152,91 +140,71 @@ var xAxisG = svg
   //     .style("max-width", 40)
   //     .text("A short description of the take-away message of this chart.");
 
+  d3.select("#selectButton")
+    .selectAll("myOptions")
+    .data(groupName)
+    .enter()
+    .append("option")
+    .text(d => d) // text showed in the menu
+    .attr("value", d => d);
 
+  console.log([nestedData[2]][0].values);
 
-  
-
-
-    d3.select("#selectButton")
-        .selectAll("myOptions")
-        .data(groupName)
-        .enter()
-        .append("option")
-        .text(d => d) // text showed in the menu
-        .attr("value", d => d);
-
-        console.log([nestedData[2]][0].values)
-
-
-
-    function update(selectedGroup) {
+  function update(selectedGroup) {
+   
 
     var dataFilter = nestedData.filter(d => d.key === selectedGroup);
     var timeGroup = d3.map(dataFilter[0].values, d => d.time).keys();
+    // var weekDayGroup = d3.map(dataFilter[0].values, d => d.weekday).keys();
 
-        
-    console.log(dataFilter[0].values)
-    console.log(timeGroup)
+    console.log(dataFilter[0].values);
+    console.log(timeGroup);
 
-        x.domain(timeGroup)
-xAxisG.transition().call(xAxis)
+    x.domain(timeGroup);
+    xAxisG.transition().call(xAxis);
 
+    svg
+      .append("g")
+      .call(xAxis)
+      // .selectAll(".domain")
+      .remove();
 
-        svg
-            .append("g")
-            .call(xAxis)
-            // .selectAll(".domain")
-            .remove();
+    svg
+      .selectAll(".hit")
+      .data(dataFilter[0].values, function(d) {
+        return d.time + ":" + d.weekday;
+      })
+      .attr("class", "hit")
+      .transition()
+      .duration(1000)
+      .attr("x", function(d) {
+        return x(d.time);
+      })
+      .attr("y", function(d) {
+        return y(d.weekday);
+      })
 
-        svg
-            .selectAll('.hit')
-            .data(dataFilter[0].values, function (d) {
-                return d.time + ":" + d.weekday;
-            })
-            .attr("class", "hit")
-            .transition()
-            .duration(1000)
-            .attr("x", function (d) {
+      .style("fill", function(d) {
+        return colorScale(d.max);
+      });
 
-                return x(d.time);
-            })
-            .attr("y", function (d) {
-                return y(d.weekday);
-            })
+    linear.domain(d3.extent(dataFilter[0].values, d => d.max));
+    // .interpolate(d3.interpolateHcl)
 
-            .style("fill", function (d) {
-                return colorScale(d.max);
-            })
+    svg.select(".legendLinear").call(legendLinear);
+  }
 
+  // update('Device_1')
 
-        linear.domain(d3.extent(dataFilter[0].values, d=> d.max))
-            // .interpolate(d3.interpolateHcl)
-  
-
-
-        svg.select(".legendLinear")
-        .call(legendLinear);
-
-
-}
-
-// update('Device_1')
-
-
-    d3.select("#selectButton").on("change", function (d) {
-        // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value");
-        // run the updateChart function with this selected option
-        update(selectedOption);
-    });
-
-
-
-
-
-
-
-
+  d3.select("#selectButton").on("change", function(d) {
+    
+    // recover the option that has been chosen
+    var selectedOption = d3.select(this).property("value");
+    // run the updateChart function with this selected option
+    // $("#my_dataviz").html("");
+    update(selectedOption);
+    
+  });
 };
 
 d3.csv("hitmap.csv").then(data => {
